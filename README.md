@@ -53,7 +53,7 @@ Feature : Search feature
 
 
 
-# 3. Q3 Below is a public API doc listing a collection of API endpoints related to Countries.https://restcountries.com/#api-endpoints-v3-all
+# 3. Q3 Below is a public API doc listing a collection of API endpoints related to Countries. https://restcountries.com/#api-endpoints-v3-all
 
 
 Script test can be check here : https://github.com/DianPermana/Practical-Test 
@@ -62,7 +62,7 @@ Result API testing :
 
 https://user-images.githubusercontent.com/18004033/235127492-47b20517-978d-4345-bedf-46bb8cadb1a1.mp4
 
-I use JMeter to create scenario testing, and divide it into two categories of scenario tests, namely positive cases and negative cases. Json Extractor as main sampler to extract data from response end point (https://restcountries.com/v3.1/name/{name}) and then store for all of the next process on other end point, so more easy for product team if we want to change which country want to check. some end point issue especially for currency end point (https://restcountries.com/v3.1/currency/{currency}). The interesting thing about this testing is that I'm trying to create modular test scripts, so that by changing only 1 parameter, which is the country name, all endpoints can be run sequentially.
+I use JMeter to create scenario testing, and divide it into two categories of scenario tests, namely positive cases and negative cases. Json Extractor as main sampler to extract data from response end point (https://restcountries.com/v3.1/name/{name}) and then store for all of the next process on other end point, so more easy for product team especially QA. if we want to change which country want to check. some end point issue especially for currency end point (https://restcountries.com/v3.1/currency/{currency}). The interesting thing about this testing is that I'm trying to create modular test scripts, so that by changing only 1 parameter, which is the country name, all endpoints can be run sequentially.
 
 # 4. Q4 Are you familiar with Automation testing?
 ```
