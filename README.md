@@ -62,7 +62,7 @@ Result API testing :
 
 https://user-images.githubusercontent.com/18004033/235127492-47b20517-978d-4345-bedf-46bb8cadb1a1.mp4
 
-
+I use JMeter to create scenario testing, and divide it into two categories of scenario tests, namely positive cases and negative cases. Json Extractor as main sampler to extract data from response end point (https://restcountries.com/v3.1/name/{name}) and then store for all of the next process on other end point, so more easy for product team if we want to change which country want to check. some end point issue especially for currency end point (https://restcountries.com/v3.1/currency/{currency}). The interesting thing about this testing is that I'm trying to create modular test scripts, so that by changing only 1 parameter, which is the country name, all endpoints can be run sequentially.
 
 # 4. Q4 Are you familiar with Automation testing?
 ```
@@ -71,11 +71,17 @@ If yes, create an automation script using any framework of your choice for the b
 2. Enter all required fields (cover only positive cases) and register your account If no, canyou code in python or Javascript?
 ```
 
-Result automation : 
+Result Automation testing : 
 
 https://user-images.githubusercontent.com/18004033/235124869-b6dff3f4-1729-4d0a-bd68-2c9b829ff307.mp4
 
 
+Tech stack : 
+
+1. [x] java 17.0.5 2022-10-18 LTS
+2. [x] Selenium 4
+3. [x] Chrome driver.exe Version 112.0.5615.138 (Official Build) (64-bit)
+4. [x] JMeter 5.5
 
 
 
