@@ -10,7 +10,7 @@ Practical test by Dian Permana
 The test cases should include as much detail as possible.
 ```
 
-Detail Can be check here : https://gist.github.com/DianPermana/e7ff8f3b8f622ecfc7ccd636b9f4c282 
+Detail Can be check here : https://gist.github.com/DianPermana/00fd30b7c5065875c2337ad6ffbc6d1e
 
 # 2. Q2 Go to https://petstore.octoperf.com/actions/Catalog.action and report at least 3 bugs.
 
@@ -56,7 +56,7 @@ Feature : Search feature
 # 3. Q3 Below is a public API doc listing a collection of API endpoints related to Countries. https://restcountries.com/#api-endpoints-v3-all
 
 
-Script test can be check here : https://github.com/DianPermana/Practical-Test 
+Script test can be check here : https://github.com/DianPermana/Practical-Test/blob/main/Rest_Countries.jmx
 
 Result API testing : 
 
