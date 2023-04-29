@@ -24,13 +24,13 @@ Feature : Search feature
    **Result   : Not Appear product "Birds"**
    **Expected : Appear all product "Birds"**
    
+Feature : Refresh page
    Given After scenario 1
    When I refresh or click Reload this page
    Then Back to Main page
 	
-   Result   : Still on the same page > Not Appear product "Birds"
-   Expected : Back to main page 
-  
+   **Result   : Still on the same page > Not Appear product "Birds"**
+   **Expected : Back to main page or page refresh properly**
   
  Feature : Add to cart
    Given I am on "https://petstore.octoperf.com/actions/Cart.action"
@@ -43,10 +43,9 @@ Feature : Search feature
    **Expected : succesfull add to cart**
 	
  Feature : flow transaction
-   Given I already add 3 product on the shopping chart
-   And Input Quantity from 3 to 99999
-   And I click Update Cart
-   When I input Quantiry again from 99999 to 3 
+   Given I have one product on shopping cart
+   And Input Quantity from 1 to 9999
+   And I Click button Update Cart
    Then the description should be true
 	
 	       | Item ID  | Product ID	              | Description In Stock?	 | Quantity	| List Price     | Total Cost
