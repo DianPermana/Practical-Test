@@ -45,12 +45,12 @@ Feature : Refresh page
  Feature : flow transaction
    Given I have one product on shopping cart
    And Input Quantity from 1 to 9999
-   And I Click button Update Cart
-   Then the description should be true
+   When I Click button Update Cart
+   Then the "Description In Stock?" should be true
 	
 	       | Item ID  | Product ID	              | Description In Stock?	 | Quantity	| List Price     | Total Cost
-    Result   : | AV-CB-01 | Toothless Tiger Shark     |	false	                 | 9999         | $18.50	 | $184.981.50
-    Expected : | AV-CB-01 | Adult Male Amazon Parrot  |	true	                 | 9999         | $18.50	 | $184.981.50
+    Result   : | FI-SW-02 | Toothless Tiger Shark     |	false	                 | 9999         | $18.50	 | $184.981.50
+    Expected : | FI-SW-02 | Toothless Tiger Shark     |	true	                 | 9999         | $18.50	 | $184.981.50
 ```
 
 Evidence Result testing
