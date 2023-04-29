@@ -1,5 +1,5 @@
-# Practical-Test
-Practical test by Dian Permana
+# Practical-Test / Written Assignment
+
 
 # 1. Q1 Create a test scenario which has multiple test cases for the following features:
 ```
@@ -17,21 +17,31 @@ Detail Can be check here : https://gist.github.com/DianPermana/00fd30b7c5065875c
 ```
 Feature : Search feature
    Given open https://petstore.octoperf.com/actions/Catalog.action
-   And Input "Various Breeds" on search menu
+   And Input "Birds" on search menu
    When I click Search button
-   Then should be displayed product
+   Then should be displayed all birds product
    
-   **Result: Not Appear product "Various Breeds"**
-   **Expected : Appear product**
+   **Result   : Not Appear product "Birds"**
+   **Expected : Appear all product "Birds"**
    
    Given After scenario 1
    When I refresh or click Reload this page
    Then Back to Main page
 	
-   Result: Still on the same page > Not Appear product "Various Breeds"
+   Result   : Still on the same page > Not Appear product "Birds"
    Expected : Back to main page 
   
   
+ Feature : Add to cart
+   Given I am on "https://petstore.octoperf.com/actions/Cart.action"
+   And I Click "Fish" Categories 
+   And I Click "FI-SW-01" Product ID with "Anglefish"name
+   When click button Add to cart "FI-SW-01" with description "Large Angelfish"
+   Then Should be succesfully add to chart 
+     
+   **Result   : Failed add to cart**
+   **Expected : succesfull add to cart**
+	
  Feature : flow transaction
    Given I already add 3 product on the shopping chart
    And Input Quantity from 3 to 99999
@@ -39,18 +49,14 @@ Feature : Search feature
    When I input Quantiry again from 99999 to 3 
    Then the description should be true
 	
-	       | Item ID  | Product ID	              | Description In Stock?	 | Quantity	| List Price |Total Cost
-    Result   : | AV-CB-01 | Adult Male Amazon Parrot  |	false	                 | 99999    | $193.50	 | $19,349,806.50
-    Expected : | AV-CB-01 | Adult Male Amazon Parrot  |	true	                 | 99999    | $193.50	 | $19,349,806.50
+	       | Item ID  | Product ID	              | Description In Stock?	 | Quantity	| List Price     | Total Cost
+    Result   : | AV-CB-01 | Toothless Tiger Shark     |	false	                 | 9999         | $18.50	 | $184.981.50
+    Expected : | AV-CB-01 | Adult Male Amazon Parrot  |	true	                 | 9999         | $18.50	 | $184.981.50
 ```
 
-| Evidence Issue  | Description |
-| -------------   | ------------- |
-| ![C](https://user-images.githubusercontent.com/18004033/235122184-7f7a2341-bb14-4edc-bdc6-9573af62faec.PNG)  | Search Feature  |
-| ![B](https://user-images.githubusercontent.com/18004033/235122573-c220e099-9ec4-4520-b9af-d2fec03c4cf2.PNG)  | Refresh page    |
-| ![A](https://user-images.githubusercontent.com/18004033/235122674-9e3ff885-a043-4b85-9414-dd016c01d048.PNG)  | Update stock    |
+Evidence Result testing
 
-
+https://user-images.githubusercontent.com/18004033/235273419-42259705-b901-4fd0-a678-63d2b4e324a7.mp4
 
 
 # 3. Q3 Below is a public API doc listing a collection of API endpoints related to Countries. https://restcountries.com/#api-endpoints-v3-all
@@ -58,7 +64,7 @@ Feature : Search feature
 
 Script test can be check here : https://github.com/DianPermana/Practical-Test/blob/main/Rest_Countries.jmx
 
-Result API testing : 
+Results API testing : 
 
 https://user-images.githubusercontent.com/18004033/235127492-47b20517-978d-4345-bedf-46bb8cadb1a1.mp4
 
@@ -71,7 +77,10 @@ If yes, create an automation script using any framework of your choice for the b
 2. Enter all required fields (cover only positive cases) and register your account If no, canyou code in python or Javascript?
 ```
 
-Result Automation testing : 
+Yes, I have experience. Since the task automation is relatively simple, I opted to use JMeter as it is easier to use within a set framework. I am also accustomed to using pytest for automation, which can be viewed here: https://github.com/DianPermana/Automation-Testing-BDD
+
+
+Results Automation testing : 
 
 https://user-images.githubusercontent.com/18004033/235124869-b6dff3f4-1729-4d0a-bd68-2c9b829ff307.mp4
 
